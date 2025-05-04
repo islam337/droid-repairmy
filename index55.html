@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дройд - профессиональный ремонт телефонов</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Дройд - ремонт телефонов">
+                </div>
+                
+                <div class="header__info">
+                    <div class="schedule">
+                        <span>Режим работы:</span>
+                        <span>Пн-Пт: 9:00-20:00</span>
+                        <span>Сб-Вс: 10:00-18:00</span>
+                    </div>
+                    
+                    <div class="contacts">
+                        <a href="https://droid.ru">Перейти на сайт Дройд</a>
+                        <a href="tel:+78001234567" class="phone">8 (800) 123-45-67</a>
+                        <a href="mailto:info@droid.ru" class="email">info@droid.ru</a>
+                    </div>
+                    
+                    <div class="social">
+                        <a href="#" class="social__link"><img src="images/vk.svg" alt="ВКонтакте"></a>
+                        <a href="#" class="social__link"><img src="images/telegram.svg" alt="Telegram"></a>
+                        <a href="#" class="social__link"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#prices">Цены</a></li>
+                    <li><a href="#repairs">Неисправности</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#vacancies">Вакансии</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Герой-секция с формой обратного звонка -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Профессиональный ремонт телефонов в Москве</h1>
+                <p class="hero__subtitle">Быстро, качественно, с гарантией до 1 года</p>
+                
+                <div class="hero__brands">
+                    <img src="images/brands/apple.svg" alt="Apple">
+                    <img src="images/brands/samsung.svg" alt="Samsung">
+                    <img src="images/brands/xiaomi.svg" alt="Xiaomi">
+                    <img src="images/brands/huawei.svg" alt="Huawei">
+                    <img src="images/brands/oppo.svg" alt="Oppo">
+                </div>
+            </div>
+            
+            <div class="callback-form">
+                <h3 class="callback-form__title">Заказать обратный звонок</h3>
+                <form id="callback-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Телефон" required>
+                    </div>
+                    <button type="submit" class="btn">Позвонить мне</button>
+                    <p class="form-notice">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages" id="about">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            
+            <div class="advantages__grid">
+                <div class="advantage">
+                    <div class="advantage__icon">
+                        <img src="images/icons/clock.svg" alt="Быстро">
+                    </div>
+                    <h3 class="advantage__title">Быстро</h3>
+                    <p class="advantage__text">Ремонт от 30 минут при наличии запчастей</p>
+                </div>
+                
+                <div class="advantage">
+                    <div class="advantage__icon">
+                        <img src="images/icons/shield.svg" alt="Надежно">
+                    </div>
+                    <h3 class="advantage__title">Надежно</h3>
+                    <p class="advantage__text">Гарантия до 1 года на все виды работ</p>
+                </div>
+                
+                <div class="advantage">
+                    <div class="advantage__icon">
+                        <img src="images/icons/star.svg" alt="Качественно">
+                    </div>
+                    <h3 class="advantage__title">Качественно</h3>
+                    <p class="advantage__text">Оригинальные запчасти и профессиональное оборудование</p>
+                </div>
+                
+                <div class="advantage">
+                    <div class="advantage__icon">
+                        <img src="images/icons/wallet.svg" alt="Выгодно">
+                    </div>
+                    <h3 class="advantage__title">Выгодно</h3>
+                    <p class="advantage__text">Цены на 15-20% ниже, чем у официальных сервисов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные неисправности -->
+    <section class="repairs" id="repairs">
+        <div class="container">
+            <h2 class="section-title">Частые неисправности</h2>
+            
+            <div class="repairs__grid">
+                <div class="repair">
+                    <div class="repair__image">
+                        <img src="images/repairs/screen.jpg" alt="Замена дисплея">
+                    </div>
+                    <h3 class="repair__title">Замена дисплейного модуля</h3>
+                    <p class="repair__desc">Замена разбитого экрана на оригинальный или качественный аналог</p>
+                    <div class="repair__price">от 1990 ₽</div>
+                    <button class="btn btn--small">Заказать</button>
+                </div>
+                
+                <div class="repair">
+                    <div class="repair__image">
+                        <img src="images/repairs/battery.jpg" alt="Замена аккумулятора">
+                    </div>
+                    <h3 class="repair__title">Замена аккумулятора</h3>
+                    <p class="repair__desc">Восстановление автономности вашего устройства</p>
+                    <div class="repair__price">от 1490 ₽</div>
+                    <button class="btn btn--small">Заказать</button>
+                </div>
+                
+                <div class="repair">
+                    <div class="repair__image">
+                        <img src="images/repairs/software.jpg" alt="Обновление ПО">
+                    </div>
+                    <h3 class="repair__title">Обновление программного обеспечения</h3>
+                    <p class="repair__desc">Обновление системы, восстановление после сбоев</p>
+                    <div class="repair__price">от 990 ₽</div>
+                    <button class="btn btn--small">Заказать</button>
+                </div>
+                
+                <div class="repair">
+                    <div class="repair__image">
+                        <img src="images/repairs/water.jpg" alt="Чистка после воды">
+                    </div>
+                    <h3 class="repair__title">Чистка от коррозии</h3>
+                    <p class="repair__desc">Устранение последствий попадания жидкости</p>
+                    <div class="repair__price">от 2490 ₽</div>
+                    <button class="btn btn--small">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Прайс-лист (слайдер) -->
+    <section class="price-slider" id="prices">
+        <div class="container">
+            <h2 class="section-title">Прайс-лист</h2>
+            
+            <div class="slider">
+                <div class="slider__controls">
+                    <button class="slider__prev">&lt;</button>
+                    <button class="slider__next">&gt;</button>
+                </div>
+                
+                <div class="slider__wrapper">
+                    <div class="slider__item">
+                        <h3 class="price-category">Замена дисплея</h3>
+                        <ul class="price-list">
+                            <li>Базовая замена <span>1990 ₽</span></li>
+                            <li>Средняя сложность <span>2990 ₽</span></li>
+                            <li>Сложный ремонт <span>4990 ₽</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="slider__item">
+                        <h3 class="price-category">Замена аккумулятора</h3>
+                        <ul class="price-list">
+                            <li>Базовая замена <span>1490 ₽</span></li>
+                            <li>Средняя сложность <span>1990 ₽</span></li>
+                            <li>Сложный ремонт <span>2990 ₽</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="slider__item">
+                        <h3 class="price-category">Замена разъема</h3>
+                        <ul class="price-list">
+                            <li>Базовая замена <span>990 ₽</span></li>
+                            <li>Средняя сложность <span>1490 ₽</span></li>
+                            <li>Сложный ремонт <span>1990 ₽</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts-section" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            
+            <div class="contacts__grid">
+                <div class="contacts__info">
+                    <div class="contact-item">
+                        <h3>Адрес:</h3>
+                        <p>г.Радужный, ул. Казамкина, дом 202"
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Телефон:</h3>
+                        <p><a href="tel:+78001234567">8 (800) 123-45-67</a></p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Email:</h3>
+                        <p><a href="mailto:info@droid.ru">info@droid.ru</a></p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Режим работы:</h3>
+                        <p>Пн-Пт: 9:00-20:00</p>
+                        <p>Сб-Вс: 10:00-18:00</p>
+                    </div>
+                    
+                    <div class="social">
+                        <a href="#" class="social__link"><img src="images/vk.svg" alt="ВКонтакте"></a>
+                        <a href="#" class="social__link"><img src="images/telegram.svg" alt="Telegram"></a>
+                        <a href="#" class="social__link"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+                
+                <div class="contacts__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890abcdef&amp;source=constructor" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы (слайдер) -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            
+            <div class="reviews-slider">
+                <div class="slider__controls">
+                    <button class="slider__prev">&lt;</button>
+                    <button class="slider__next">&gt;</button>
+                </div>
+                
+                <div class="slider__wrapper">
+                    <div class="slider__item">
+                        <div class="review">
+                            <div class="review__author">
+                                <img src="images/reviews/1.jpg" alt="Иван">
+                                <span>Иван</span>
+                            </div>
+                            <p class="review__text">Отличный сервис! Заменили экран на iPhone за 40 минут, все работает идеально. Цена ниже, чем в официальном сервисе. Рекомендую!</p>
+                            <div class="review__rating">★★★★★</div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider__item">
+                        <div class="review">
+                            <div class="review__author">
+                                <img src="images/reviews/2.jpg" alt="Ольга">
+                                <span>Ольга</span>
+                            </div>
+                            <p class="review__text">После попадания воды телефон не включался. В Дройде почистили от коррозии, теперь работает как новый. Спасибо!</p>
+                            <div class="review__rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider__item">
+                        <div class="review">
+                            <div class="review__author">
+                                <img src="images/reviews/3.jpg" alt="Дмитрий">
+                                <span>Дмитрий</span>
+                            </div>
+                            <p class="review__text">Заменял батарею в Samsung. Сделали быстро, дали гарантию. Персонал вежливый, объяснили все нюансы. Буду обращаться еще.</p>
+                            <div class="review__rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Примеры работ (слайдер) -->
+    <section class="works">
+        <div class="container">
+            <h2 class="section-title">Примеры наших работ</h2>
+            
+            <div class="works-slider">
+                <div class="slider__controls">
+                    <button class="slider__prev">&lt;</button>
+                    <button class="slider__next">&gt;</button>
+                </div>
+                
+                <div class="slider__wrapper">
+                    <div class="slider__item">
+                        <div class="work-example">
+                            <div class="work-example__image">
+                                <img src="images/before-after/1-before.jpg" alt="До ремонта">
+                                <img src="images/before-after/1-after.jpg" alt="После ремонта">
+                            </div>
+                            <p class="work-example__desc">Замена дисплейного модуля iPhone 11</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slider__item">
+                        <div class="work-example">
+                            <div class="work-example__image">
+                                <img src="images/before-after/2-before.jpg" alt="До ремонта">
+                                <img src="images/before-after/2-after.jpg" alt="После ремонта">
+                            </div>
+                            <p class="work-example__desc">Чистка от коррозии после попадания воды</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slider__item">
+                        <div class="work-example">
+                            <div class="work-example__image">
+                                <img src="images/before-after/3-before.jpg" alt="До ремонта">
+                                <img src="images/before-after/3-after.jpg" alt="После ремонта">
+                            </div>
+                            <p class="work-example__desc">Замена корпуса и аккумулятора Samsung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи внизу -->
+    <section class="bottom-form">
+        <div class="container">
+            <div class="bottom-form__content">
+                <h2 class="section-title">Остались вопросы?</h2>
+                <p class="bottom-form__text">Оставьте заявку и наш менеджер свяжется с вами в течение 15 минут</p>
+            </div>
+            
+            <form class="bottom-form__form">
+                <div class="form-group">
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Телефон" required>
+                </div>
+                <button type="submit" class="btn btn--large">Заказать звонок</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="logo">
+                        <img src="images/logo-white.svg" alt="Дройд - ремонт телефонов">
+                    </div>
+                    <p class="footer__about">Профессиональный ремонт телефонов и планшетов с 2015 года. Оригинальные запчасти, гарантия на все виды работ.</p>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Меню</h3>
+                    <ul class="footer__menu">
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#prices">Цены</a></li>
+                        <li><a href="#repairs">Неисправности</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#vacancies">Вакансии</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__contacts">
+                        <li><a href="tel:+78001234567">8 (800) 123-45-67</a></li>
+                        <li><a href="mailto:info@droid.ru">info@droid.ru</a></li>
+                        <li>г.Радужный, ул. Казамкина, дом 202"
+                        <li>Пн-Пт: 9:00-20:00</li>
+                        <li>Сб-Вс: 10:00-18:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Соцсети</h3>
+                    <div class="social">
+                        <a href="#" class="social__link"><img src="images/vk-white.svg" alt="ВКонтакте"></a>
+                        <a href="#" class="social__link"><img src="images/telegram-white.svg" alt="Telegram"></a>
+                        <a href="#" class="social__link"><img src="images/whatsapp-white.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">© 2023 Дройд. Все права защищены.</p>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+                <a href="#" class="footer__link">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка заказа звонка (фиксированная) -->
+    <div class="fixed-callback">
+        <button class="btn btn--callback">Заказать звонок</button>
+    </div>
+
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>                                                                
